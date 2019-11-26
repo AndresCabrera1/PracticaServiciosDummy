@@ -1,6 +1,9 @@
 group 'ServicioEmpleados'
 version '1.0.1-SNAPSHOT'
 
+repositories {
+    mavenCentral()
+}
 apply plugin: 'java'
 apply plugin: 'net.serenity-bdd.aggregator'
 
@@ -15,7 +18,7 @@ buildscript {
 
 ext {
     serenityVersion = '2.0.88'
-    serenityCucumberVersion = '1.9.45'
+    serenityCucumberVersion = '1.9.48'
 
 }
 
@@ -24,7 +27,7 @@ dependencies {
     testCompile "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
     testCompile group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.6.0-M1'
     testCompile('org.assertj:assertj-core:3.14.0')
-    testCompile('org.slf4j:slf4j-simple:1.7.29')
+    testCompile('org.slf4j:slf4j-simple:2.0.0-alpha1')
     compile "net.serenity-bdd:serenity-core:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-junit:$rootProject.ext.serenityVersion"
     compile "net.serenity-bdd:serenity-cucumber:$rootProject.ext.serenityCucumberVersion"

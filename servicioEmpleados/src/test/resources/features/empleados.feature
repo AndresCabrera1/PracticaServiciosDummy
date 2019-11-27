@@ -3,14 +3,14 @@
 
         @ServicioEmpleado
             Esquema del escenario: ana desea consultar los datos basicos de un empleado por numero de identificacion
-                Dado que ana tiene el <id> del empleado
-                Cuando visualiza los datos basicos del mismo
+                Dado que ana tiene el documento del empleado <id>
+                Cuando visualiza los datos basicos del mismo <Nombre empleado> <Salario empleado> <Edad empleado>
                 Entonces verifica los datos correspondientes al servicio
 
             Ejemplos:
-                      |id  |
-                      |2276|
-                      |1   |
-                      |824 |
-                      |2   |
+                      |id  |Nombre empleado|Salario empleado|Edad empleado|
+                      |1   |     Salome    |       457      |      35     |
+                      |6876|     BINNNNYYY |       0        |      999999 |
+                      |5001|     Prasant49 |       56716    |      49     |
+
 
